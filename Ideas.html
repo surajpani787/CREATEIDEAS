@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&family=Uchen&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <title>CREATE IDEA'S</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CREATE IDEA'S</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AboutUs.html">OurStory</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Experience
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Designing.html">Designing</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="webdevelopment.html">web Development</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="Business.html">Business Development</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Technology
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Ideas.html">Ideas</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="BusinessBlog.html">Business Blog</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="ComputerTraining.html">Computer Training</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="DataEntry.html">Data Entry</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="Ebaybusiness.html">Ebay Business</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="ContactUs.Html">Contct Us</a>
+        </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+            style="padding: 0px; margin-bottom: 3px;">
+        </form>
+        <form class="d-flex mx-2">
+          <button type="button" class="btn btn-outline-success me-2" data-bs-toggle="modal"
+            data-bs-target="#loginModal">Login</button>
+          <button type="button" class="btn btn-outline-success me-2" data-bs-toggle="modal"
+            data-bs-target="#signupModal">Signup</button>
+        </form>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Log In </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="    background: linear-gradient(to bottom, #ffffff 0%, #ffffcc 100%);
+          ">
+          <form class="form-signin">
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
+              autofocus="" style="margin-bottom: 20px;">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Get Registered </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="    background: linear-gradient(to bottom, #ffffff 0%, #ffffcc 100%);
+
+          ">
+          <form action="/examples/actions/confirmation.php" method="post">
+            <div class="form-group">
+              <div class="row">
+                <div class="col"><input type="text" class="form-control" name="first_name" placeholder="First Name"
+                    required="required" style="margin-bottom: 10px;"></div>
+                <div class="col"><input type="text" class="form-control" name="last_name" placeholder="Last Name"
+                    required="required"></div>
+              </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 10px;">
+              <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+            </div>
+            <div class="form-group" style="margin-bottom: 10px;">
+              <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+            </div>
+            <div class="form-group" style="margin-bottom: 10px;">
+              <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password"
+                required="required">
+            </div>
+            <div class="form-group" style="margin-bottom: 10px;">
+              <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms
+                  of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 style="text-align: center; color: coral;">New Ideas to Inspire You to Start a Business</h1>
+  <div class="container">
+    <img src="idea.jpeg" alt="" style="width: 100%; margin-top: 30px;">
+  </div>
+
+  <div class="container">
+    <p style="font-size: 1.1rem; margin-top: 20px;">Few things are as exciting as starting a new business. Before you <a
+        href="https://www.thebalancesmb.com/starting-a-small-business-4161641" data-component="link"
+        data-source="inlineLink" data-type="internalLink" data-ordinal="1" rel="noopener noreferrer">start your own
+        company</a>, though, you've got to come up with some great ideas. The trick is finding a great small business
+      idea
+      that will be viable, excite you, and fit your skill set. So, how do you come up with a business idea that is right
+      for you? </p>
+
+    <h2 style="color: cadetblue;">Small Business Ideas for Aspiring Entrepreneurs</h2>
+    <p style="font-size: 1.1rem;">If you are looking for a small business idea (or even a <a
+        href="https://www.thebalancesmb.com/differences-between-micro-business-and-small-business-4159188"
+        data-component="link" data-source="inlineLink" data-type="internalLink" data-ordinal="1">micro-business</a>) to
+      kickstart
+      your path to entrepreneurship, you are in the right place. This list of 101 small business ideas includes
+      everything from personal services, to retail opportunities, to environmental services, to pet-related ideas, to
+      technology businesses. It's bound to include something that will inspire you and get you one step closer to your
+      dream of running your own company.</p>
+
+    <h3 style="color: cadetblue;">1. Food tech</h3>
+    <p style="font-size: 1.1rem;">Our first recommendation comes from Phil Strazzulla, founder of HR software company
+      SelectSoftware. Strazzulla sees the food tech sector as a major growth industry in the coming years:</p>
+    <p style="font-size: 1.1rem;">“Companies like Beyond Meat are just the beginning of businesses engineering
+      eco-friendly and healthy food that is as delicious as our current diet. The science is now there, and the market
+      for next-generation food is literally in the trillions of dollars, and it grows just as quickly as the world's
+      population.”</p>
+
+    <h3 style="color: cadetblue;">2. Extended reality</h3>
+    <p style="font-size: 1.1rem;">Extended reality technology encompasses both augmented reality, or AR, and virtual
+      reality, or VR, technologies. Kenny Trinh, editor of tech review publication Net Books News, sees extended reality
+      technology proliferating in the coming years.</p>
+    <p style="font-size: 1.1rem;">"In 2020, we’ll see more and more businesses applying extended reality to their brands
+      to stand out from the competition and deliver a better customer experience,” says Trinh. “In fact, some businesses
+      have been doing that already.”</p>
+    <p style="font-size: 1.1rem;">Trinh points to the eco-friendly water packaging project W-in-a-Box, which uses AR to
+      further explain the benefits of their product.</p>
+
+    <h3 style="color: cadetblue;">3. Robotics</h3>
+    <p style="font-size: 1.1rem;">Robotics is a bit of a catch-all term that encompasses mechanical engineering,
+      electronic engineering, information engineering, computer science and other related disciplines. The goal of
+      robotics is to create machines that can move and react to sensory input. According to Statista, this industry is
+      expected to grow from $80 billion in annual revenue in 2019 to over $200 billion in annual revenue by 2025.</p>
+
+
+    <h3 style="color: cadetblue;">4. Customer experience management, or CXM </h3>
+    <p style="font-size: 1.1rem;">Ian Kelly, VP of operations for a CBD oil company called NuLeaf, believes customer
+      experience management platforms like ZenDesk will soon make customer relationship management platforms, or CRMs,
+      obsolete.</p>
+    <p style="font-size: 1.1rem;">"While a CRM can help you manage customer details, a CXM unifies all sales, marketing
+      and customer service conversations into a single silo so that your customers are treated like the loyal fan-base
+      they are,” says Kelly. “No more hitting your customer over the head with repeat promos, selling them on
+      services/products they already have or letting them slip through the cracks when they've bought and never been
+      properly onboarded.”</p>
+
+    <h3 style="color:cadetblue;">5. Influencer marketing</h3>
+    <p style="font-size: 1.1rem;">Influencer marketing is an industry enabled by social media platforms like Instagram
+      involving endorsements and product placements from individuals or organizations who possess a certain level of
+      expertise or social influence in their respective fields. While not just anyone can be an influencer, if you
+      possess some level of unique knowledge or a lot of charisma, you can launch a business by gathering a social media
+      following and hiring an influencer marketing agency to connect you with brands.</p>
+    <p style="font-size: 1.1rem;">On the flip side, you can also launch a business focused on connecting brands with the
+      right influencers for their products and mission.</p>
+
+    <h3 style="color: cadetblue;">6. Content automation </h3>
+    <p style="font-size:1.1rem ;">With content and social media becoming an ever-growing part of many businesses’
+      marketing plans, Gleb Myrko, an analyst at the market research firm Freedonia Group, believes content automation
+      software presents a great opportunity for tech entrepreneurs.</p>
+    <p style="font-size:1.1rem ;">"Businesses today have accounts on all different social media channels like Instagram,
+      Facebook, TikTok, etc. All of these channels require different approaches to content planning, content production
+      and account management and analytics,” says Myrko. “There’s still not a widely applied tool for omnichannel
+      management, promotion and analytics for the most popular social media. We need an all-in-one hub where marketers
+      can analyze data/performance, as well as manage and promote their accounts on different social media channels in a
+      more centralized, convenient and effective manner.”</p>
+
+    <h3 style="color: cadetblue;">7. Artificial intelligence</h3>
+    <p style="font-size: 1.1rem;">The term “artificial intelligence" is used to describe technologies pertaining to
+      machine learning, computer vision, natural language processing and more. Although artificial intelligence is a
+      technology that has been around for quite some time, as it becomes increasingly sophisticated, its market
+      potential is growing as well.</p>
+    <p style="font-size: 1.1rem;">Statista reports that the industry grew by 154% in 2019 alone—making it a great tech
+      sector to build a business around.</p>
+
+    <h3 style="color: cadetblue;">8. Podcasting</h3>
+    <p style="font-size: 1.1rem;">If you’ve been paying attention to innovations in content over the past few years,
+      you’re probably aware of the exploding popularity of podcasts. Today, 51% of the U.S. population has listened to a
+      podcast, and podcaster Dre Baldwin sees podcasting’s prospects only increasing in the coming years.</p>
+    <p style="font-size: 1.1rem;">“Entrepreneurs need to start building their podcast content library ASAP,” Baldwin
+      says. “More and more people are consuming media on the go; audiobooks and podcasts are at the forefront of this.
+      Any entrepreneur or business entity that wants the attention of consumers needs to be in their ears, literally.”
+    </p>
+
+    <h3 style="color: cadetblue;">9. Streaming service</h3>
+    <p style="font-size: 1.1rem;">Services like Netflix and Disney+ get most of the attention when it comes to streaming
+      services, but there is plenty of opportunity to start a streaming service for more niche content. For example, you
+      can create a streaming service where users can upload instructional videos or a streaming service designed
+      specifically for children’s content. You could also develop a platform for live streaming (like Twitch) or
+      streaming music (like Spotify).</p>
+    <p style="font-size: 1.1rem;">The global outlook on the streaming service industry is overwhelmingly positive. In
+      2019, streaming services generated $25 billion in revenue. By 2025, that number is expected to rise to $30
+      billion, according to Statista.</p>
+
+    <h3 style="color: cadetblue;">10. Mobile application development</h3>
+    <p style="font-size: 1.1rem;">Every business needs a website. And the way the market is trending, soon every
+      business will also need their own mobile app. This presents an exciting opportunity for individuals skilled in app
+      development. Successful companies like Braze and Leanplum have built their entire business around developing apps
+      for others.</p>
+    <p style="font-size: 1.1rem;">But apps aren’t only for businesses. You could also develop an app for a game (like
+      Candy Crush), utility (like Evernote), content aggregator (like Flipboard) and more. There is really an endless
+      supply of app ideas. There were 194 billion app downloads in 2018 alone, and that number is only expected to
+      climb. So strike while the iron is hot.</p>
+  </div>
+
+
+
+   <!-- Footer -->
+   <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example2" class="form-control" />
+                <label class="form-label" for="form5Example2">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p style="font-size: 1.1rem;">Welcome to <strong>CREATE IDEA'S</strong>, your number one source for all things
+          for
+          your new business ideas. We're dedicated to giving you the very best of [product], with a focus on [three
+          characteristics, ie: dependability, customer service and uniqueness.]
+          Founded in 2021 by <strong>Suraj Panigrahi</strong>, <strong>CREATE IDEA'S</strong> has come a long way from
+          its
+          beginnings in a starting
+          location, ie: home office, Jeypore, Koraput, Odisha.]. When Suraj Panigrahi first started out, his passion for
+          passion of founder, ie: helping other to grow their business with <strong>Low Investment </strong> providing
+          the
+          best equipment for his fellow and gave him the impetus to turn hard
+          work and inspiration into to a booming online Business Consultant. We now serve customers all over place in
+          the
+          world, and are thrilled to be a part of the quirky, eco-friendly, fair trade.
+
+          We hope you enjoy our Consultant as much as we enjoy offering them to you. If you have any questions or
+          comments,
+          please don't hesitate to contact us.
+
+          <br>Sincerely,
+        </p>
+        <p style="font-size: 1.1rem;"> Suraj Panigrahi, CEO, Founder</p>
+      </section>
+      <!-- Section: Text -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white">CREATEIDEAS.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

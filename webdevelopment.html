@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&family=Uchen&display=swap"
+    rel="stylesheet">
+  \
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <title>CREATE IDEA'S</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CREATE IDEA'S</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AboutUs.html">OurStory</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Experience
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Designing.html">Designing</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="webdevelopment.html">web Development</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="Business.html">Business Development</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Technology
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Ideas.html">Ideas</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="BusinessBlog.html">Business Blog</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="ComputerTraining.html">Computer Training</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="DataEntry.html">Data Entry</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="Ebaybusiness.html">Ebay Business</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="ContactUs.Html">Contct Us</a>
+        </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+            style="padding: 0px; margin-bottom: 3px;">
+        </form>
+        <form class="d-flex mx-2">
+          <button type="button" class="btn btn-outline-success me-2" data-bs-toggle="modal"
+            data-bs-target="#loginModal">Login</button>
+          <button type="button" class="btn btn-outline-success me-2" data-bs-toggle="modal"
+            data-bs-target="#signupModal">Signup</button>
+        </form>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Log In </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="    background: linear-gradient(to bottom, #ffffff 0%, #ffffcc 100%);
+          ">
+          <form class="form-signin">
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
+              autofocus="" style="margin-bottom: 20px;">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Get Registered </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="    background: linear-gradient(to bottom, #ffffff 0%, #ffffcc 100%);
+
+          ">
+          <form action="/examples/actions/confirmation.php" method="post">
+            <div class="form-group">
+              <div class="row">
+                <div class="col"><input type="text" class="form-control" name="first_name" placeholder="First Name"
+                    required="required" style="margin-bottom: 10px;"></div>
+                <div class="col"><input type="text" class="form-control" name="last_name" placeholder="Last Name"
+                    required="required"></div>
+              </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 10px;">
+              <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+            </div>
+            <div class="form-group" style="margin-bottom: 10px;">
+              <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+            </div>
+            <div class="form-group" style="margin-bottom: 10px;">
+              <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password"
+                required="required">
+            </div>
+            <div class="form-group" style="margin-bottom: 10px;">
+              <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms
+                  of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section style="background: linear-gradient(to bottom, #00ffff 0%, #00ffff 100%); ">
+    <h1 style="text-align: center;">How To Make Business Plan For Your Web Design and Development
+      Startup?</h1>
+  </section>
+
+  <div class="container">
+    <img src="web.jpg" alt="" style="width: 100%; margin-top: 10px; margin-bottom: 10px;">
+  </div>
+
+  <div class="container">
+    <p style="font-size: 1.3rem;">Are you planning to start a web design and development company? Whether you’re
+      starting or growing your business,
+      you definitely need a business plan.</p>
+    <p style="font-size: 1.3rem;">Only a business plan can give you answers to a wide-ranging list of questions. It sure
+      is tedious, but it
+      definitely pays off.</p>
+    <p style="font-size: 1.3rem;">The good news is you don’t have to spend days to write a business plan. We will walk
+      you through on how to make a
+      business set up for your <a href="https://colorwhistle.com/" style="color: green;">web design and development
+        company</a> In case you already created one, you can use our
+      guide as a reference to see what you missed.</p>
+  </div>
+
+  <div class="container">
+    <h1 style="color: teal;">Web Development & Web Design <br>Business Plan</h1>
+    <p style="font-size: 1.3rem;">If you want to stand out and be noticed and if you want to succeed, you need to have
+      the right business strategy.
+      Let’s take a look.</p>
+
+    <h2 style="margin-top: 40px; color: cadetblue;">1. Who Is Your Audience?</h2>
+    <p>Given the current state, having a well-defined target audience is important. No business can target everyone.
+      Some say they will offer their services to interested parties, others say they target small business owners or
+      stay-at-home-moms. Such types of targets are way too general.</p>
+    <p>Targeting specific customers does not mean that you’re excluding others. You are simply targeting a particular
+      set of audience who are more likely to buy from you. Answer these below questions to figure out your target
+      audience.</p>
+    <ul>
+      <li>Figure out who will seek your web design and development services based on age, location, gender, income
+        level, education level, occupation, ethnic background and relationship status</li>
+      <li>Which medium does your audience turn for information?</li>
+      <li>How and when will they use your services?</li>
+      <li>Is your target audience easily accessible?</li>
+      <li>Will they really benefit from your services?</li>
+      <li>Can your target audience afford your web design and development services?</li>
+    </ul>
+    <h2 style="color: cadetblue;">2. Understand Your Competitors</h2>
+    <p>Knowing your competitors and what they are offering can help your web design and development company stand out.
+      You can set pricing accordingly and better prepare for rival marketing campaigns. Try to find out answers for
+      these questions.</p>
+    <ul>
+      <li>What is their market position and what are people purchasing from them</li>
+      <li>What is their pricing structure?</li>
+      <li>How good is their social media review?</li>
+    </ul>
+    <p>Also, figure out their weakness and find out how it can be addressed by your services.</p>
+
+    <h2 style="color: cadetblue;">3. Hiring</h2>
+    <p>In today’s economy, there is really no shortage for candidates for any position. It will appear as though
+      employers can find the best candidate for any job. However, it is not that simple. There is always a possibility
+      of hiring the wrong person which can have a negative impact.</p>
+    <p>Impressive work qualification and work experience are certainly required but, you also have to figure out if they
+      blend with the culture of your organizatio</p>
+    <p>Some of the ways you can improve recruitment process are by looking for a career-oriented person, accessing
+      practical experience, determining strengths needed for the position, asking the right job interview questions,
+      checking candidate background reference, and using phone interviews to pre-screen.</p>
+
+    <h2 style="color: cadetblue;">4. Finding Work For Your Start-Up</h2>
+    <p>The next step is finding the work and here is where it can be a challenge to get noticed. One option is to try
+      advertising on <a style="color: green; font-size: 22px;" href="http://productforums.google.com/d/forum/webmasters"
+        target="_blank" rel="noopener">webmaster forums</a> and business forums. Here you will find people who are
+      looking for web
+      design and
+      other online services and you can connect with those people.</p>
+    <p>Alternatively, you can try using sites like <a style="color: green; font-size: 22px;"
+        href="http://www.elance-odesk.com/" target="_blank" rel="noopener">'eLance'</a>,<a
+        style="color: green; font-size: 22px;" href="https://www.upwork.com/" target="_blank" rel="noopener">'ODesk'</a>
+      and<a style="color: green; font-size: 22px;" href="https://www.peopleperhour.com/" target="_blank"
+        rel="noopener">'People Per Hour'</a> which are aimed at
+      connecting online workers with the businesses who need them. You can even try going around your local area and
+      asking businesses if they already have a website!</p>
+    <h2 style="color: cadetblue;">5. Cash Flow Management</h2>
+    <p>When it comes to financial management of a company, cash is king. Whether you’re a startup or growing business,
+      <a style="color: green; font-size: 22px;" href="https://www.entrepreneur.com/article/66008" target="_blank"
+        rel="noopener">cash flow management</a> is essential for business survival. Failing to manage cash flow puts
+      your business with too
+      much stock, long payment terms, overspending and overtrading. So be prepared, an accurate cash flow projection can
+      give you heads up before trouble strikes.
+    </p>
+  </div>
+
+  <div class="container" style="padding-bottom: 10px;">
+    <div class="ratio ratio-16x9">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Pw8U9l8acPA?controls=0&amp;start=33"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <h1 style="color: cadetblue;">Few Takeaways</h1>
+    <p>In order to compete, you are probably going to have to offer very low rates at least to start with and this is
+      where things can get tough. But a great solution is to use a white label company like ours.</p>
+    <p>Many businesses hire ColorWhistle to provide work that they will then resell to their own customers.</p>
+    <p>As we’re based in India we can work for comparatively low rates, that means you can charge more for our work and
+      still make a profit – and your clients don’t need to know we were involved!</p>
+    <p>You can then use our services either to outsource all your customers – making an almost entirely passive income,
+      or you can use our services to lighten the load or to handle the bits that you don’t want to do.</p>
+    <p>Either way, you optimize your workflow meaning you can take more projects on and offer the most competitive rates
+      around while doing what you love! Why not give us a call or send us an email to find out more?</p>
+    <p>In conclusion, running a <a style="color: green; font-size: 22px;"
+        href="https://colorwhistle.com/services/website-redesign-company/">web design
+        services</a> company is a great way to make money but you need to ensure you take
+      time to research the market and that you do everything you can to increase your output while cutting overheads.
+    </p>
+  </div>
+
+   <!-- Footer -->
+   <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example2" class="form-control" />
+                <label class="form-label" for="form5Example2">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p style="font-size: 1.1rem;">Welcome to <strong>CREATE IDEA'S</strong>, your number one source for all things
+          for
+          your new business ideas. We're dedicated to giving you the very best of [product], with a focus on [three
+          characteristics, ie: dependability, customer service and uniqueness.]
+          Founded in 2021 by <strong>Suraj Panigrahi</strong>, <strong>CREATE IDEA'S</strong> has come a long way from
+          its
+          beginnings in a starting
+          location, ie: home office, Jeypore, Koraput, Odisha.]. When Suraj Panigrahi first started out, his passion for
+          passion of founder, ie: helping other to grow their business with <strong>Low Investment </strong> providing
+          the
+          best equipment for his fellow and gave him the impetus to turn hard
+          work and inspiration into to a booming online Business Consultant. We now serve customers all over place in
+          the
+          world, and are thrilled to be a part of the quirky, eco-friendly, fair trade.
+
+          We hope you enjoy our Consultant as much as we enjoy offering them to you. If you have any questions or
+          comments,
+          please don't hesitate to contact us.
+
+          <br>Sincerely,
+        </p>
+        <p style="font-size: 1.1rem;"> Suraj Panigrahi, CEO, Founder</p>
+      </section>
+      <!-- Section: Text -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white">CREATEIDEAS.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

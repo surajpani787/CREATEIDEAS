@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&family=Uchen&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <title>CREATE IDEA'S</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CREATE IDEA'S</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AboutUs.html">OurStory</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Experience
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Designing.html">Designing</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="webdevelopment.html">web Development</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="Business.html">Business Development</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Technology
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Ideas.html">Ideas</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="BusinessBlog.html">Business Blog</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="ComputerTraining.html">Computer Training</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="DataEntry.html">Data Entry</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="Ebaybusiness.html">Ebay Business</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="ContactUs.Html">Contct Us</a>
+        </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+            style="padding: 0px; margin-bottom: 3px;">
+        </form>
+        <form class="d-flex mx-2">
+          <button type="button" class="btn btn-outline-success me-2" data-bs-toggle="modal"
+            data-bs-target="#loginModal">Login</button>
+          <button type="button" class="btn btn-outline-success me-2" data-bs-toggle="modal"
+            data-bs-target="#signupModal">Signup</button>
+        </form>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Log In </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="    background: linear-gradient(to bottom, #ffffff 0%, #ffffcc 100%);
+          ">
+          <form class="form-signin">
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
+              autofocus="" style="margin-bottom: 20px;">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Get Registered </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="    background: linear-gradient(to bottom, #ffffff 0%, #ffffcc 100%);
+
+          ">
+          <form action="/examples/actions/confirmation.php" method="post">
+            <div class="form-group">
+              <div class="row">
+                <div class="col"><input type="text" class="form-control" name="first_name" placeholder="First Name"
+                    required="required" style="margin-bottom: 10px;"></div>
+                <div class="col"><input type="text" class="form-control" name="last_name" placeholder="Last Name"
+                    required="required"></div>
+              </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 10px;">
+              <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+            </div>
+            <div class="form-group" style="margin-bottom: 10px;">
+              <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+            </div>
+            <div class="form-group" style="margin-bottom: 10px;">
+              <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password"
+                required="required">
+            </div>
+            <div class="form-group" style="margin-bottom: 10px;">
+              <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms
+                  of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section style="color: coral; ">
+    <h1 style="text-align: center;">Business Development: The Basics</h1>
+  </section>
+
+  <div class="container">
+    <h1 style="color: cadetblue; margin-top: 50px;">What Are the Basics Of Business Development?</h1>
+    <p style="font-size: 1.1rem;">In the simplest terms, business development can be summarized as the ideas,
+      initiatives, and activities that help
+      make a business better. This includes increasing revenues, growth in terms of business expansion, <a
+        href="https://www.investopedia.com/ask/answers/012715/what-difference-between-profitability-and-profit.asp"
+        data-component="link" data-source="inlineLink" data-type="internalLink" data-ordinal="1"
+        rel="noopener noreferrer">increasing profitability</a> by building strategic partnerships and making strategic
+      business decisions.</p>
+    <p style="font-size: 1.1rem;">“Business Development Executive,” “Manager of Business Development,” and “VP, Business
+      Development” are all impressive job titles often heard in business organizations. Sales, strategic initiatives,
+      <a href="https://www.investopedia.com/terms/p/partnership.asp" data-component="link" data-source="inlineLink"
+        data-type="internalLink" data-ordinal="1" rel="noopener noreferrer">business partnerships</a>, market
+      development, business expansion, and <a href="https://www.investopedia.com/terms/f/four-ps.asp"
+        data-component="link" data-source="inlineLink" data-type="internalLink" data-ordinal="2"
+        rel="noopener noreferrer">marketing</a>—all of these fields are involved in
+      business development but are often mixed up and mistakenly viewed as the sole function of business development.
+    </p>
+
+    <h2 style="color: cadetblue;">KEY TAKEAWAYS</h2>
+    <ul>
+      <li>Business development encompasses a wide scope of ideas, activities, and initiatives that a business owner and
+        management implement with the goal of making the business better.</li>
+      <li>Business development can include many objectives, such as sales growth, business expansion, the formation of
+        strategic partnerships, and increased profitability.</li>
+      <li>Successful business development impacts every department within a company, including sales, marketing,
+        manufacturing, human resources, accounting, finance, product development, and vendor management.</li>
+      <li>Business developers should be aware of new market opportunities, possibilities for expansion, competitor
+        developments, and the current sources of the company's revenue.</li>
+    </ul>
+
+
+    <h1 style="color: cadetblue;">Understanding the Basics of Business Development</h1>
+    <p style="font-size: 1.1rem;">Business development activities extend across different departments, including <a
+        href="https://www.investopedia.com/terms/n/netsales.asp" data-component="link" data-source="inlineLink"
+        data-type="internalLink" data-ordinal="1" rel="noopener noreferrer">sales</a>,
+      marketing, project management, product management, and vendor management. Networking, negotiations, partnerships,
+      and cost-savings efforts are also involved. All of these different departments and activities are driven by and
+      aligned with the business development goals. </p>
+    <p style="font-size: 1.1rem;">For instance, a business has a product or service which is successful in one region,
+      such as the United States. The business development team assesses further expansion potential. After all <a
+        href="https://www.investopedia.com/terms/d/duediligence.asp" data-component="link" data-source="inlineLink"
+        data-type="internalLink" data-ordinal="1" rel="noopener noreferrer">due diligence</a>, research, and studies, it
+      finds that the product or service can be expanded to a new region, such as
+      Brazil.</p>
+
+    <h2 style="color: cadetblue;">Sales</h2>
+    <p style="font-size: 1.2rem;">Sales personnel focus on a particular market or a particular (set of) client(s), often
+      for a targeted <a href="https://www.investopedia.com/terms/r/revenue.asp" data-component="link"
+        data-source="inlineLink" data-type="internalLink" data-ordinal="1" rel="noopener noreferrer">revenue</a> number.
+      In this case, business development assesses the Brazilian markets and concludes
+      that sales worth $1.5 billion can be achieved in three years. With such set goals, the sales department targets
+      the <a href="https://www.investopedia.com/terms/c/client-base.asp" data-component="link" data-source="inlineLink"
+        data-type="internalLink" data-ordinal="2" rel="noopener noreferrer">customer base</a> in the new market with
+      their sales strategies.</p>
+
+    <h2 style="color: cadetblue;">Marketing</h2>
+    <p style="font-size: 1.1rem;"><a href="https://www.investopedia.com/terms/m/marketing.asp" data-component="link"
+        data-source="inlineLink" data-type="internalLink" data-ordinal="1" rel="noopener noreferrer">Marketing</a>
+      involves promotion and advertising aimed towards the successful sale of
+      products to end-customers. Marketing plays a complementary role in achieving sales targets. Business development
+      initiatives may allocate an estimated marketing budget. Higher budgets allow aggressive marketing strategies like
+      <a href="https://www.investopedia.com/terms/c/coldcalling.asp" data-component="link" data-source="inlineLink"
+        data-type="internalLink" data-ordinal="2" rel="noopener noreferrer">cold calling</a>, personal visits,
+      roadshows, and free sample distribution. Lower budgets tend to result in passive
+      marketing strategies, such as limited online ads, print ads, social media ads, and billboards.
+    </p>
+
+    <h2 style="color: cadetblue;">Strategic Initiatives or Partnerships</h2>
+    <p style="font-size: 1.1rem;">To enter a new market, will it be worth going solo by clearing all required
+      formalities, or will it be more sensible to form a <a
+        href="https://www.investopedia.com/terms/s/strategicalliance.asp" data-component="link" data-source="inlineLink"
+        data-type="internalLink" data-ordinal="1" rel="noopener noreferrer">strategic alliance</a> or partnership with
+      local firms already
+      operating in the region? Assisted by legal and finance teams, the business development team weighs all of the pros
+      and cons of the available options and selects the one that best serves the business.</p>
+
+    <h2 style="color: cadetblue;">Project Management/Business Planning</h2>
+    <p style="font-size: 1.1rem;">Does the business expansion require a new facility in the new market, or will all the
+      products be <a href="https://www.investopedia.com/terms/m/manufacturing.asp" data-component="link"
+        data-source="inlineLink" data-type="internalLink" data-ordinal="1" rel="noopener noreferrer">manufactured</a> in
+      the base country and then imported into the targeted market? Will the latter option
+      require an additional facility in the base country? Such decisions are finalized by the business development team
+      based on their cost- and time-related assessments. Then, the<a
+        href="https://www.investopedia.com/terms/p/project-management.asp" data-component="link"
+        data-source="inlineLink" data-type="internalLink" data-ordinal="2" rel="noopener noreferrer">project
+        management</a>/implementation team swings into
+      action to work towards the desired goal.</p>
+
+    <h2 style="color: cadetblue;">Product Management</h2>
+    <p style="font-size: 1.1rem;">Regulatory standards and market requirements vary across countries. A medicine of a
+      certain composition may be allowed in India but not in the United Kingdom, for example. Does the new market
+      require a customized—or altogether new—version of the product?</p>
+    <p style="font-size: 1.1rem;">These requirements drive the work of <a
+        href="https://www.investopedia.com/terms/p/product-life-cycle-management.asp" data-component="link"
+        data-source="inlineLink" data-type="internalLink" data-ordinal="1" rel="noopener noreferrer">product
+        management</a> and manufacturing departments,
+      as decided by the business strategy. Cost consideration, legal approvals, and regulatory adherence are all
+      assessed as a part of a business development plan.</p>
+
+    <h2 style="color: cadetblue;">Vendor Management</h2>
+    <p style="font-size: 1.1rem;">Will the new business need external <a
+        href="https://www.investopedia.com/terms/v/vendor.asp" data-component="link" data-source="inlineLink"
+        data-type="internalLink" data-ordinal="1" rel="noopener noreferrer">vendors</a>? For example, will the shipping
+      of a
+      product need a dedicated courier service? Will the firm partner with any established retail chain for retail
+      sales? What are the costs associated with these engagements? The business development team works through these
+      questions. </p>
+
+    <h2 style="color: cadetblue;">Negotiations, Networking, and Lobbying</h2>
+    <p style="font-size: 1.1rem;">A few business initiatives may need expertise in <a
+        href="https://www.investopedia.com/terms/s/soft-skills.asp" data-component="link" data-source="inlineLink"
+        data-type="internalLink" data-ordinal="1" rel="noopener noreferrer">soft skills</a>. For example, lobbying is
+      legal in some locales and may become necessary for penetrating the market. Other soft skills like <a
+        href="https://www.investopedia.com/terms/n/networking.asp" data-component="link" data-source="inlineLink"
+        data-type="internalLink" data-ordinal="2" rel="noopener noreferrer">networking</a> and
+      negotiating may be needed with different third-parties, such as vendors, agencies, government authorities, and
+      regulators. All such initiatives are part of business development.</p>
+
+    <h2 style="color: cadetblue;">Cost Savings</h2>
+    <p style="font-size: 1.1rem;">Business development is not just about increasing sales, products, and market reach.
+      Strategic decisions are also needed to improve the <a href="https://www.investopedia.com/terms/b/bottomline.asp"
+        data-component="link" data-source="inlineLink" data-type="internalLink" data-ordinal="1"
+        rel="noopener noreferrer">bottom line</a>, which includes <a
+        href="https://www.investopedia.com/terms/c/cost-cutting.asp" data-component="link" data-source="inlineLink"
+        data-type="internalLink" data-ordinal="2" rel="noopener noreferrer">cost-cutting</a> measures. An internal
+      assessment revealing high spending on travel, for instance, may lead to travel policy changes, such as hosting
+      video conference calls instead of on-site meetings, or opting for less expensive transportation modes. </p>
+    <p style="font-size: 1.1rem;">Management can implement similar cost-saving initiatives by<a
+        href="https://www.investopedia.com/terms/o/outsourcing.asp" data-component="link" data-source="inlineLink"
+        data-type="internalLink" data-ordinal="1" rel="noopener noreferrer">outsourcing</a>non-core work,
+      such as billing, accounting, financials, technology operations, and customer service. Strategic partnerships
+      needed for these initiatives are a part of business development.</p>
+
+    <h2 style="color: cadetblue;">What Should a Business Developer Know?</h2>
+    <p style="font-size: 1.1rem;">Since business development involves high-level decision making, the business developer
+      should remain informed about the following:</p>
+    <ul>
+      <li>The current state of the business in terms of<a href="https://www.investopedia.com/terms/s/swot.asp"
+          data-component="link" data-source="inlineLink" data-type="internalLink" data-ordinal="1"
+          rel="noopener noreferrer">SWOT analysis</a>(strengths, weaknesses, opportunities, and threats)</li>
+      <li>The current state of the overall industry and growth projections</li>
+      <li>Competitor developments</li>
+      <li>Primary sources of sales/revenues of current business and dependencies</li>
+      <li>The customer profile</li>
+      <li>New and unexplored market opportunities</li>
+      <li>New domains/products/sectors eligible for business expansion, which may complement the existing business</li>
+      <li>The long-term view, especially with regards to the initiatives being proposed</li>
+      <li>The cost areas and the possible options for cost-savings</li>
+    </ul>
+
+    <h2 style="color: cadetblue;">The Business Plan</h2>
+    <p style="font-size: 1.1rem;">The business development scenario discussed above is specific to a <a
+        href="https://www.investopedia.com/terms/b/business-plan.asp" data-component="link" data-source="inlineLink"
+        data-type="internalLink" data-ordinal="1" rel="noopener noreferrer">business expansion plan</a>
+      plan, whose impact can be felt by almost every unit of the business. There can be similar business development
+      objectives, such as the development of a new business line, new sales channel development, new product
+      development, new partnerships in existing/new markets, and even <a
+        href="https://www.investopedia.com/terms/m/mergersandacquisitions.asp" data-component="link"
+        data-source="inlineLink" data-type="internalLink" data-ordinal="2" rel="noopener noreferrer">merger and
+        acquisition</a> (M&A) decisions.</p>
+    <p style="font-size: 1.1rem;">For example, in the case of a merger, significant cost savings can be accomplished by
+      integrating the common functions of the manufacturing, finance, and legal departments of the two firms. Similarly,
+      a business operating from five different offices in a city can be moved to a large central facility, resulting in
+      significant <a href="https://www.investopedia.com/terms/o/operating-cost.asp" data-component="link"
+        data-source="inlineLink" data-type="internalLink" data-ordinal="1" rel="noopener noreferrer">operating cost</a>
+      savings. However, would this lead to employee attrition, if the new location isn't
+      convenient for everyone? It's up to the business development team to assess such concerns.</p>
+    <p style="font-size: 1.1rem;">In essence, business development involves high-level decision-making based on a
+      realistic assessment of all potential changes and their impact. Through new ideas and initiatives, it aims to
+      improve the overall business prospects, which drive the functioning of the different business units. It is not
+      sales; it is not marketing; it is not partnering. Instead, it is the eco-system encompassing the entire business
+      and its various divisions, <a
+        href="https://www.investopedia.com/ask/answers/020415/what-more-important-business-profitability-or-growth.asp"
+        data-component="link" data-source="inlineLink" data-type="internalLink" data-ordinal="1"
+        rel="noopener noreferrer">driving overall growth</a>. </p>
+
+    <h2 style="color: cadetblue;">What Drives Business Development Activity?</h2>
+    <p style="font-size: 1.1rem;">Due to the wide-open scope of business development and activities, there are no
+      standard practices and principles. From exploring new opportunities in external markets to introducing
+      <a href="https://www.investopedia.com/terms/e/efficiency.asp" data-component="link" data-source="inlineLink"
+        data-type="internalLink" data-ordinal="1" rel="noopener noreferrer">efficiencies</a> in internal business
+      operations, everything can fit under the business development umbrella.
+    </p>
+    <p style="font-size: 1.1rem;">Those involved in business development need to come up with creative ideas, but their
+      proposals may prove to be unfeasible or unrealistic. It's important to be flexible. Employees charged with
+      business development should try to seek out and take constructive criticism, and remember that it's a process.
+    </p>
+
+    <h2 style="color: cadetblue; margin-top: 50px;">Business Development Ethics</h2>
+    <p style="font-size: 1.1rem;"><a href="https://www.investopedia.com/terms/b/business-ethics.asp"
+        data-component="link" data-source="inlineLink" data-type="internalLink" data-ordinal="1"
+        rel="noopener noreferrer">Business ethics</a> involves implementing appropriate and fair practices regarding
+      issues
+      such as corporate governance, insider trading, bribery, discrimination, corporate social responsibility, and
+      fiduciary responsibilities. Laws and regulations often set the standard for business ethics, which companies can
+      then choose to follow and build on in order to earn trust and loyalty from consumers and market participants.</p>
+
+    <h1 style="color: coral;">Business Development FAQs</h1>
+    <h3 style="color: cadetblue;">Why Is New Business Development Important?</h3>
+    <p style="font-size: 1.1rem;">New business development is important for generating jobs, developing key industries,
+      and keeping the economy moving forward.</p>
+
+    <h3 style="color: cadetblue;">What Are the Key Skills for Business Development Executives?</h3>
+    <p style="font-size: 1.irem;">Development executives need to have leadership skills, vision, drive, and a
+      willingness to work with a variety of people to get to a common goal.</p>
+
+    <h3 style="color: cadetblue;">How Can I Be Successful in Business Development?</h3>
+    <p style="font-size: 1.1rem;">Having a vision and putting together a good team are among the factors that help
+      predict success in business development. But a successful developer also writes a good business plan, which
+      becomes the blueprint from which they build their success.</p>
+
+    <h3 style="color: cadetblue;">What Should a Business Development Plan Include?</h3>
+    <p style="font-size: 1.1rem;">A business development plan, or <a
+        href="https://www.investopedia.com/terms/b/business-plan.asp" data-component="link" data-source="inlineLink"
+        data-type="internalLink" data-ordinal="1" rel="noopener noreferrer">business plan</a>, describes what a
+      business's objectives
+      are and how it intends to achieve them, including goals, start-up costs, and targeted milestones.</p>
+
+  </div>
+
+
+ <!-- Footer -->
+ <footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p style="font-size: 1.1rem;">Welcome to <strong>CREATE IDEA'S</strong>, your number one source for all things
+        for
+        your new business ideas. We're dedicated to giving you the very best of [product], with a focus on [three
+        characteristics, ie: dependability, customer service and uniqueness.]
+        Founded in 2021 by <strong>Suraj Panigrahi</strong>, <strong>CREATE IDEA'S</strong> has come a long way from
+        its
+        beginnings in a starting
+        location, ie: home office, Jeypore, Koraput, Odisha.]. When Suraj Panigrahi first started out, his passion for
+        passion of founder, ie: helping other to grow their business with <strong>Low Investment </strong> providing
+        the
+        best equipment for his fellow and gave him the impetus to turn hard
+        work and inspiration into to a booming online Business Consultant. We now serve customers all over place in
+        the
+        world, and are thrilled to be a part of the quirky, eco-friendly, fair trade.
+
+        We hope you enjoy our Consultant as much as we enjoy offering them to you. If you have any questions or
+        comments,
+        please don't hesitate to contact us.
+
+        <br>Sincerely,
+      </p>
+      <p style="font-size: 1.1rem;"> Suraj Panigrahi, CEO, Founder</p>
+    </section>
+    <!-- Section: Text -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white">CREATEIDEAS.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

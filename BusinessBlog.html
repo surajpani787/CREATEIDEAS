@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&family=Uchen&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>CREATE IDEA'S</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CREATE IDEA'S</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">OurStory</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Experience
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Designing.html">Designing</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="webdevelopment.html">web Development</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="Business.html">Business Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Technology
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Ideas.html">Ideas</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="BusinessBlog.html">Business Blog</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="ComputerTraining.html">Computer Training</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="DataEntry.html">Data Entry</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="Ebaybusiness.html">Ebay Business</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="ContactUs.Html">Contct Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        style="padding: 0px; margin-bottom: 3px;">
+                </form>
+                <form class="d-flex mx-2">
+                    <button type="button" class="btn btn-outline-success me-2" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button type="button" class="btn btn-outline-success me-2" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Signup</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Log In </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="    background: linear-gradient(to bottom, #ffffff 0%, #ffffcc 100%);
+          ">
+                    <form class="form-signin">
+                        <label for="inputEmail" class="sr-only">Email address</label>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
+                            autofocus="" style="margin-bottom: 20px;">
+                        <label for="inputPassword" class="sr-only">Password</label>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+                            required="">
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get Registered </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="    background: linear-gradient(to bottom, #ffffff 0%, #ffffcc 100%);
+
+          ">
+                    <form action="/examples/actions/confirmation.php" method="post">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col"><input type="text" class="form-control" name="first_name"
+                                        placeholder="First Name" required="required" style="margin-bottom: 10px;"></div>
+                                <div class="col"><input type="text" class="form-control" name="last_name"
+                                        placeholder="Last Name" required="required"></div>
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 10px;">
+                            <input type="email" class="form-control" name="email" placeholder="Email"
+                                required="required">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 10px;">
+                            <input type="password" class="form-control" name="password" placeholder="Password"
+                                required="required">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 10px;">
+                            <input type="password" class="form-control" name="confirm_password"
+                                placeholder="Confirm Password" required="required">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 10px;">
+                            <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a
+                                    href="#">Terms
+                                    of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 style="text-align: center; color: #007eff;">Top 5 Reasons You Should Start a Business Blog</h1>
+
+    <div class="container">
+        <p style="font-size: 1.1rem; margin-top: 30px;">Blogging, especially when combined with <a
+                href="https://www.thebalancesmb.com/social-media-small-business-2951743" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="1">social media</a>, is a
+            powerful way to promote your business online.
+            There are still many small business owners that are hesitant to make the jump and start a business blog, but
+            they're missing out on a big opportunity.</p>
+    </div>
+
+    <div class="container">
+        <img src="blog.jpg" alt="" width="100%" height="500px">
+    </div>
+
+    <div class="container">
+        <p style="font-size: 1.1rem; margin-top: 20px;"><strong>There are several reasons why small business owners
+                don't blog:</strong>
+        </p>
+        <p style="font-size: 1.1rem; margin-top: 20px;">
+        <ul>
+            <li>It takes a commitment of time and resources that can be overwhelming.</li>
+            <li>They don't know how to <a href="https://www.thebalancesmb.com/best-blogging-platforms-2531531"
+                    data-component="link" data-source="inlineLink" data-type="internalLink" data-ordinal="1">get
+                    started</a>from a technical perspective.</li>
+            <li>It can be challenging to develop a loyal, engaged following on a business blog that focuses on one
+                specific topic.</li>
+            <li>It can be difficult to consistently come up with interesting business-related post ideas.</li>
+        </ul>
+        </p>
+        <p style="font-size: 1.1rem; margin-top: 20px;">But starting a business blog doesn't have to be an intimidating
+            or overwhelming experience. Once you get
+            started, the benefits of a business blog can make the effort worthwhile.</p>
+        <p style="font-size: 1.1rem; margin-top: 20px;"><strong> Here are five of the biggest reasons you should start a blog for
+            your business.</strong></p>
+        <h3 style="color: coral;">1. Target Potential Clients</h3>
+        <p style="font-size: 1.1rem;">Business blogs typically don't involve direct promotion of your products and
+            services, but that doesn't mean a blog isn't worthy <a
+                href="https://www.thebalancesmb.com/small-business-marketing-ideas-2951688" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="1">marketing activity</a>. The promotion
+            just comes in a more
+            passive way.</p>
+        <p style="font-size: 1.1rem;">By discussing the industry you work in, the general services you provide, and the
+            individual challenges of your target audience, you are getting your name in front of clients that may need
+            and consider buying your product or hiring you for the services you provide.</p>
+        <h3 style="color: coral;">2. Boost Your Website Traffic</h3>
+        <p style="font-size: 1.1rem;">Most business blogs are separate from a business' website, either created as a
+            different section or as a different site entirely. Having a secondary location gives you a way to target new
+            visitors and move the traffic to your products and services, online store or contact pages through
+            in-content links and links in your navigation.</p>
+        <h3 style="color: coral;">3. Establish Yourself as an Industry Expert</h3>
+        <p style="font-size: 1.1rem;">Your blog posts can demonstrate your expertise in a particular subject area by
+            sharing high-quality and relevant information with your readers. Over time, you can become known as a go-to
+            resource that provides consistent and useful information to help your readers learn about new tools and
+            resources, solve tough challenges and advance their own businesses.</p>
+        <h3 style="color: coral;">4. Develop a Community</h3>
+        <p style="font-size: 1.1rem;">One of the best parts of a successful business blog is the communication,
+            collaboration and sharing that can take place in the comments. Facilitating an active comments area on your
+            blog by posting and responding to comments can help you create a community with shared interests, and learn
+            a great deal about your audience in the process.</p>
+        <h3 style="color: coral;">5. Create Valuable Person-to-Person Connections</h3>
+        <p style="font-size: 1.1rem;">A business blog doesn't have to be all business, all the time. You can avoid
+            having a boring business blog by injecting some of your personality and <a
+                href="https://www.thebalancesmb.com/what-is-personal-branding-4056073" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="1">personal brand</a>, going off topic
+            occasionally and using humor. Not only does this give your blog a little individuality, but it can also make
+            you more relatable and approachable by your readers.</p>
+        <p style="font-size: 1.1rem;">These are just a few of the benefits that can come with a successful business
+            blog. Although creating a <a
+                href="https://www.thebalancesmb.com/making-your-business-blog-a-success-2951624" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="1">successful business blog</a> takes
+            time, dedication and patience, once you get
+            started, you'll be on your way to realizing these plus many more benefits.</p>
+
+        <h1 style="color: #007eff;">Tips for Making Your Business Blog a Success</h1>
+        <p style="font-size: 1.1rem; margin-top: 20px;"><a
+                href="https://www.thebalancesmb.com/entrepreneurs-guide-social-media-1201254" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="1">Content
+                marketing</a> can be a powerful tool for all types of small business owners,
+            and a blog is one of the best ways to leverage content. The idea of starting a business blog from scratch
+            may be a bit intimidating, but it doesn't have to be an overwhelming experience. The benefits of<a
+                href="https://www.thebalancesmb.com/top-reasons-you-should-start-a-business-blog-2951626"
+                data-component="link" data-source="inlineLink" data-type="internalLink" data-ordinal="2">benefits of
+                starting a business blog</a>can make the process worthwhile.<br><strong>Here are the tips for getting
+                started with a
+                business blog and
+                making it a success.</strong></p>
+
+        <h3 style="color: coral;">Post Consistently </h3>
+        <p style="font-size: 1.1rem;">There are no defined rules when it comes to posting frequency. Whether you post
+            once a week or every day, the most important factor is that you blog on a consistent schedule. In order to
+            establish a following, readers need to know when to expect new content.</p>
+
+        <h3 style="color: coral;">Provide Relevant, Useful, and Valuable Information </h3>
+        <p style="font-size: 1.1rem;">The more useful the information you post, the more readers you will attract and
+            the more likely they will become regular readers. Remember the old writing mantra: Show, don't tell. If, for
+            example, you are promoting a particular <a
+                href="https://www.thebalancesmb.com/increasing-sales-in-existing-markets-2948141" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="1">business strategy</a>, provide an
+            example of how and why it was
+            successful.</p>
+
+        <h3 style="color: coral;">Ask for and Respond to Comments</h3>
+        <p style="font-size: 1.1rem;">Make a point to invite your readers to weigh in and share their opinions in your
+            comments on every post. And when they do have something to say, acknowledge their comments, even when their
+            viewpoint differs from your own.</p>
+
+        <h3 style="color: coral;">Have a Focus, but Be Willing to Go Off-Topic </h3>
+        <p style="font-size: 1.1rem;">It's good to have a clear focus when it comes to your <a
+                href="https://www.thebalancesmb.com/blog-ideas-for-your-small-business-3954521" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="1">blogging topics</a>, but too
+            much of anything can be a turnoff. Be willing to introduce new topics or a new way to look at a common topic
+            to add interest and increase engagement.</p>
+
+        <h3 style="color: coral;">Make It Easy to Subscribe </h3>
+        <p style="font-size: 1.1rem;">If you want your readers to continue reading, put your subscription options in an
+            easy-to-find place. You also can attract more subscribers by offering multiple options. Access to the <a
+                href="https://www.thebalancesmb.com/shop-and-sell-better-on-ebay-with-rss-1140572" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="1">RSS feed</a> and a post-by-email
+            option are popular choices.</p>
+
+        <h3 style="color: coral;">Promote and Share What You Write </h3>
+        <p style="font-size: 1.1rem;">Don't expect your readers to catch every single post you write unless you're
+            reminding them that your blog exists. Share links to your blog in <a
+                href="https://www.thebalancesmb.com/social-media-small-business-2951743" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="1">social media</a>, on your website, in
+            your
+            newsletters, and even in your email signature, and encourage people to click through.</p>
+
+        <h3 style="color: coral;">Mix Up Your Format </h3>
+        <p style="font-size: 1.1rem;">If you typically write long all-text posts, try mixing in a few shorter posts or
+            adding images to see if it changes your pageviews. You even can throw in an occasional video post to add a
+            new level of interest.</p>
+
+        <h3 style="color: coral;">Have a Point of View</h3>
+        <p style="font-size: 1.1rem;">Sometimes, all it takes is a little controversy to get your blog on the map. Don't
+            be afraid to take a stand on a hot topic in your industry, and then encourage discussion in your comments.
+        </p>
+
+        <h3 style="color: coral;">Make It Easy to Read </h3>
+        <p style="font-size: 1.1rem;">Use subheadings, bullets, and other formatting wherever appropriate to make it
+            easier for your readers to skim and zero in on the information most important to them.</p>
+
+    </div>
+
+ <!-- Footer -->
+ <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example2" class="form-control" />
+                <label class="form-label" for="form5Example2">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p style="font-size: 1.1rem;">Welcome to <strong>CREATE IDEA'S</strong>, your number one source for all things
+          for
+          your new business ideas. We're dedicated to giving you the very best of [product], with a focus on [three
+          characteristics, ie: dependability, customer service and uniqueness.]
+          Founded in 2021 by <strong>Suraj Panigrahi</strong>, <strong>CREATE IDEA'S</strong> has come a long way from
+          its
+          beginnings in a starting
+          location, ie: home office, Jeypore, Koraput, Odisha.]. When Suraj Panigrahi first started out, his passion for
+          passion of founder, ie: helping other to grow their business with <strong>Low Investment </strong> providing
+          the
+          best equipment for his fellow and gave him the impetus to turn hard
+          work and inspiration into to a booming online Business Consultant. We now serve customers all over place in
+          the
+          world, and are thrilled to be a part of the quirky, eco-friendly, fair trade.
+
+          We hope you enjoy our Consultant as much as we enjoy offering them to you. If you have any questions or
+          comments,
+          please don't hesitate to contact us.
+
+          <br>Sincerely,
+        </p>
+        <p style="font-size: 1.1rem;"> Suraj Panigrahi, CEO, Founder</p>
+      </section>
+      <!-- Section: Text -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white">CREATEIDEAS.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

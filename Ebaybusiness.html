@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&family=Uchen&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>CREATE IDEA'S</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CREATE IDEA'S</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">OurStory</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Experience
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Designing.html">Designing</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="webdevelopment.html">web Development</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="Business.html">Business Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Technology
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Ideas.html">Ideas</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="BusinessBlog.html">Business Blog</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="ComputerTraining.html">Computer Training</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="DataEntry.html">Data Entry</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="Ebaybusiness.html">Ebay Business</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="ContactUs.Html">Contct Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        style="padding: 0px; margin-bottom: 3px;">
+                </form>
+                <form class="d-flex mx-2">
+                    <button type="button" class="btn btn-outline-success me-2" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button type="button" class="btn btn-outline-success me-2" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Signup</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Log In </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="    background: linear-gradient(to bottom, #ffffff 0%, #ffffcc 100%);
+          ">
+                    <form class="form-signin">
+                        <label for="inputEmail" class="sr-only">Email address</label>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
+                            autofocus="" style="margin-bottom: 20px;">
+                        <label for="inputPassword" class="sr-only">Password</label>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+                            required="">
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get Registered </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="    background: linear-gradient(to bottom, #ffffff 0%, #ffffcc 100%);
+
+          ">
+                    <form action="/examples/actions/confirmation.php" method="post">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col"><input type="text" class="form-control" name="first_name"
+                                        placeholder="First Name" required="required" style="margin-bottom: 10px;"></div>
+                                <div class="col"><input type="text" class="form-control" name="last_name"
+                                        placeholder="Last Name" required="required"></div>
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 10px;">
+                            <input type="email" class="form-control" name="email" placeholder="Email"
+                                required="required">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 10px;">
+                            <input type="password" class="form-control" name="password" placeholder="Password"
+                                required="required">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 10px;">
+                            <input type="password" class="form-control" name="confirm_password"
+                                placeholder="Confirm Password" required="required">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 10px;">
+                            <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a
+                                    href="#">Terms
+                                    of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 style="text-align: center; color: #007eff;">How to Start an eBay Business</h1>
+
+    <div class="container">
+        <p style="font-size: 1.1rem; margin-top: 30px;">An eBay consulting business may be the perfect business idea for
+            an eBay pro who wants to help others use eBay effectively and generate a significant income. Learn if an
+            eBay consulting business is the right business for you.</p>
+        <p style="font-size: 1.1rem;">Building an eBay business is like building any other company from scratch. It's a
+            messy process. You have to think like an entrepreneur. You'll need some business sense and good
+            communication skills. Selling isn’t easy, but<a
+                href="https://www.thebalancesmb.com/important-tips-for-new-ebay-sellers-4116953" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="1">getting your business going</a> on
+            eBay is actually pretty simple
+            and straightforward. If you're not already an eBay member, you'll need to <a
+                href="https://www.thebalancesmb.com/start-a-home-ebay-business-3993914" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="2">get an eBay account</a>. It is the
+            same kind of account that eBay shoppers use, and it's free to set up.</p>
+    </div>
+
+    <div class="container">
+        <img src="ebay.jpg" alt="" width="100%" height="500px">
+    </div>
+
+    <div class="container">
+        <h2 style="color: coral; margin-top: 20px;">Make Some Purchases</h2>
+
+        <img src="ebay2.webp" alt="" width="100%" style="margin-top: 20px;">
+        <p style="font-size: 1.1rem;">Before you can successfully sell on eBay, you'll need to see how people on eBay
+            buy. With that in mind, buy a few things that you need on eBay to <a
+                href="https://www.thebalancesmb.com/how-to-buy-on-ebay-1140200" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="1">learn how eBay shopping works</a>.
+            Look at
+            listings in a few different formats and get up to speed on how <a
+                href="https://www.thebalancesmb.com/understanding-the-ebay-auction-automatic-bidding-system-1140186"
+                data-component="link" data-source="inlineLink" data-type="internalLink" data-ordinal="2">bidding</a>
+            works on eBay.</p>
+    </div>
+
+    <div class="container">
+        <h2 style="color: coral; margin-top: 20px;">Make Some Simple Sales to Gain Experience</h2>
+
+        <img src="ebay3.webp" alt="" width="100%" style="margin-top: 20px;">
+        <p style="font-size: 1.1rem;">Start by listing one item for sale on eBay—just something around the house. If
+            you're having trouble deciding, look at lists of common first-time sellers items or <a
+                href="https://www.thebalancesmb.com/junk-into-cash-on-ebay-room-by-room-1140181" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="1">go through your house</a>
+            one room at a time to find things you don't need any longer.</p>
+        <p style="font-size: 1.1rem;">Once you have items to post, take pictures of them and write good descriptions,
+            careful to disclose any flaws or blemishes. If you don't have one already, pick up a scale so you can
+            determine the right weight and consult <a
+                href="https://pages.ebay.com/seller-center/shipping/calculating-shipping-costs-and-handling-time.html"
+                data-component="link" data-source="inlineLink" data-type="externalLink" data-ordinal="1"
+                rel="nofollow noopener" target="_blank">eBay's shipping calculator</a> to see how much it's going to
+            cost you to
+            send the item. Make sure to weigh the items in the envelope or packaging you're planning to ship the item in
+            to get the most accurate weight.</p>
+        <p style="font-size: 1.1rem;">When you're ready to list, use the "Sell" link at the upper-right of eBay's
+            website and fill out the selling form to post the items for sale. From there, when you get your first sales,
+            you'll need to package and ship your items. When the package is delivered, ask for and leave feedback.</p>
+        <p style="font-size: 1.1rem;"></p>
+
+        <p style="font-size: 1.1rem;">Beware that eBay charges listing fees after you have reached 50 listings. Make
+            sure you know what fees you might be subject to so as to avoid<a
+                href="https://www.thebalancesmb.com/why-am-i-being-charged-by-ebay-1140127" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="1">unpleasant surprises</a>.</p>
+    </div>
+
+    <div class="container">
+        <h2 style="color: coral; margin-top: 20px;">Learn the Ins and Outs of eBay</h2>
+
+        <img src="ebay4.webp" alt="" width="100%" style="margin-top: 20px;">
+        <p style="font-size: 1.1rem;">With some basic buying and selling experience under your belt, do some reading to
+            get a feel for eBay's rules and basic features and culture. Take notes.</p>
+    </div>
+
+    <div class="container">
+        <h2 style="color: coral; margin-top: 20px;">Start Sourcing Items to Sell</h2>
+
+        <img src="ebay5.webp" alt="" width="100%" style="margin-top: 20px;">
+        <p style="font-size: 1.1rem;">You can't make a living selling things you've found around the house. You'll need
+            to find things to sell—things that you can buy with regularity, mark up, and sell with predictability. The
+            best places to find items that you can resell are thrift stores, flea markets, swap meets, garage, sales,
+            yard sales, auctions, estate sales, and anywhere else folks are unloading their second-hand stuff.</p>
+
+        <p style="font-size: 1.1rem;">Ultimately, finding shopping trends, niches, and great product opportunities is up
+            to you. So is finding and establishing relationships with<a
+                href="https://www.thebalancesmb.com/product-sourcing-for-ebay-selling-1140413" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="1">sources and suppliers</a> or
+            drop-shippers and
+            wholesalers. You'll also be in charge of managing the capital needs of getting started with an initial
+            inventory, whatever these may be. eBay won't and doesn't help with this process.</p>
+
+        <p style="font-size: 1.1rem;">You will have to do research. Send email. Make phone calls. Visit other
+            businesses. Build relationships. There is often no easy step-by-step here. You'll need to think about
+            business models and your customer service values. You'll also be faced with everyday retail questions like
+            w<a href="https://www.thebalancesmb.com/how-to-choose-an-ebay-business-model-1140421" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="1">business models</a>hether you'll
+            handle the goods you sell or use a <a href="https://www.thebalancesmb.com/fulfillment-partner-1140229"
+                data-component="link" data-source="inlineLink" data-type="internalLink" data-ordinal="2">fulfillment
+                partner</a>, or how your accounting will be done,
+            or what it takes to operate as a business legally in your area.</p>
+    </div>
+
+    <div class="container">
+        <h2 style="color: coral; margin-top: 20px;">Work and Grow</h2>
+
+        <img src="ebay6.webp" alt="" width="100%" style="margin-top: 20px;">
+
+        <p style="font-size: 1.1rem;">Getting up and running is just the beginning. In time, you may want to outfit an
+            <a href="https://www.thebalancesmb.com/create-an-ebay-home-office-1140386" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="1">office</a> and set financial and
+            <a href="https://www.thebalancesmb.com/how-powersellers-perform-so-well-on-ebay-1140437"
+                data-component="link" data-source="inlineLink" data-type="internalLink" data-ordinal="2">other kinds of
+                goals</a>, using <a
+                href="https://www.thebalancesmb.com/using-terapeak-for-ebay-market-research-and-analytics-1140589"
+                data-component="link" data-source="inlineLink" data-type="internalLink" data-ordinal="3">market
+                research</a> to help you to balance your books
+            with sustainable average selling prices, <a
+                href="https://www.thebalancesmb.com/sell-through-percentage-1140231" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="4">sell-through rates</a> and volume
+            relative to your costs. You may also
+            want to <a href="https://www.thebalancesmb.com/amazon-vs-ebay-for-selling-1140405" data-component="link"
+                data-source="inlineLink" data-type="internalLink" data-ordinal="5">branch out beyond eBay</a>since eBay
+            is just one selling venue amongst many that are online.
+            Eventually, you may want to take your start and turn it into a functioning company and business process
+            that's all about what you sell and your relationships with customers and suppliers—not necessarily just
+            about eBay itself.
+        </p>
+    </div>
+
+
+    <!-- Footer -->
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example2" class="form-control" />
+                <label class="form-label" for="form5Example2">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p style="font-size: 1.1rem;">Welcome to <strong>CREATE IDEA'S</strong>, your number one source for all things
+          for
+          your new business ideas. We're dedicated to giving you the very best of [product], with a focus on [three
+          characteristics, ie: dependability, customer service and uniqueness.]
+          Founded in 2021 by <strong>Suraj Panigrahi</strong>, <strong>CREATE IDEA'S</strong> has come a long way from
+          its
+          beginnings in a starting
+          location, ie: home office, Jeypore, Koraput, Odisha.]. When Suraj Panigrahi first started out, his passion for
+          passion of founder, ie: helping other to grow their business with <strong>Low Investment </strong> providing
+          the
+          best equipment for his fellow and gave him the impetus to turn hard
+          work and inspiration into to a booming online Business Consultant. We now serve customers all over place in
+          the
+          world, and are thrilled to be a part of the quirky, eco-friendly, fair trade.
+
+          We hope you enjoy our Consultant as much as we enjoy offering them to you. If you have any questions or
+          comments,
+          please don't hesitate to contact us.
+
+          <br>Sincerely,
+        </p>
+        <p style="font-size: 1.1rem;"> Suraj Panigrahi, CEO, Founder</p>
+      </section>
+      <!-- Section: Text -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white">CREATEIDEAS.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
